@@ -5,6 +5,53 @@ body {
 	font-family: Arial, sans-serif;
 }
 
+/* 导航栏样式 */
+.navbar {
+	background-color: #333;
+	/* 导航栏背景色 */
+	overflow: hidden;
+	/* 清除浮动 */
+}
+
+.navbar-list {
+	display: flex;
+	/* 使用Flexbox布局 */
+	justify-content: center;
+	/* 子元素水平居中 */
+	align-items: center;
+	/* 子元素垂直居中（如果需要的话）*/
+	padding: 0;
+	/* 移除默认的内边距 */
+	margin: 0;
+	/* 移除默认的外边距 */
+	list-style: none;
+	/* 移除列表样式 */
+}
+
+.navbar-item {
+	/* 如果有需要，可以为li标签添加样式 */
+}
+
+.navbar-item a {
+	color: white;
+	/* 链接文字颜色 */
+	text-align: center;
+	/* 文本居中 */
+	padding: 14px 16px;
+	/* 内边距 */
+	text-decoration: none;
+	/* 移除下划线 */
+	display: block;
+	/* 转换为块级元素 */
+}
+
+.navbar-item a:hover {
+	background-color: #ddd;
+	/* 链接鼠标悬停时的背景色 */
+	color: black;
+	/* 链接鼠标悬停时的文字颜色 */
+}
+
 /* Banner 部分样式 */
 .banner {
 	display: flex;
@@ -22,7 +69,7 @@ body {
 }
 
 .logo-container img {
-	max-width: 50%;
+	max-width: 80%;
 	/* 图片最大宽度为容器宽度 */
 	height: auto;
 	/* 保持图片的原始纵横比 */
@@ -35,52 +82,34 @@ body {
 	/* 去除默认的上下边距 */
 }
 
-/* 组织介绍部分样式 */
-.intro {
-	padding: 20px;
-	/* 为介绍部分添加内边距 */
-	text-align: center;
-	/* 文本居中 */
-}
-
 /* 超链接按钮样式 */
+.center-flex {
+	display: flex;
+	justify-content: center;
+	/* 水平居中 */
+	align-items: center;
+	/* 垂直居中（如果父元素有高度）*/
+	height: 100px;
+	/* 可以设置任意高度，取决于你的需求 */
+}
+
 .btn {
-	display: inline-block;
-	/* 允许设置宽度和高度 */
-	padding: 10px 20px;
-	/* 内边距 */
-	background-color: #007BFF;
-	/* 背景色，例如Bootstrap的蓝色 */
-	color: #fff;
-	/* 文字颜色 */
-	text-decoration: none;
-	/* 去除下划线 */
-	border-radius: 5px;
-	/* 圆角 */
-	margin-top: 20px;
-	/* 与上方内容的间距 */
-	transition: background-color 0.3s ease;
-	/* 平滑的背景色过渡效果 */
+	  display: inline-block; /* 允许设置宽度和高度 */  
+	  padding: 10px 20px; /* 内边距 */  
+	  background-color: #007BFF; /* 背景色，例如Bootstrap的蓝色 */  
+	  color: #fff; /* 文字颜色 */  
+	  text-decoration: none; /* 去除下划线 */  
+	  border-radius: 5px; /* 圆角 */  
+	  margin-top: 20px; /* 与上方内容的间距 */  
+	  transition: background-color 0.3s ease; /* 平滑的背景色过渡效果 */ 
 }
 
-.btn:hover {
-	background-color: #0056b3;
-	/* 鼠标悬停时的背景色 */
+.future-plans h2 {
+	/* 如果有需要，可以为h2标签添加样式 */
 }
 
-/* 响应式设计 */
-@media (max-width: 600px) {
-
-	/* 当屏幕宽度小于600px时 */
-	.banner {
-		padding: 10px;
-		/* 在小屏幕上减少内边距 */
-	}
-
-	.logo-container img {
-		max-width: 80%;
-		/* 在小屏幕上进一步限制图片的最大宽度 */
-	}
+.future-plans p {
+	/* 如果有需要，可以为p标签添加样式 */
 }
 
 /* 页脚部分样式 */
