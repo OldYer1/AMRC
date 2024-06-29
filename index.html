@@ -5,37 +5,92 @@
 		<title>AMRC 我的世界官方网站</title>
 		<link href="css/style.css" rel="stylesheet" type="text/css" />
 		<style>
+			/* LOGO 部分样式 */
+			.logo-container {
+				display: flex;
+				justify-content: center;
+				/* 水平居中 */
+				align-items: center;
+				/* 垂直居中 */
+				padding: 20px;
+			}
+
+			.logo-container img {
+				height: auto;
+				/* 保持图片的原始纵横比 */
+			}
+
+			.org-name {
+				margin: 0;
+				margin-top: 20px;
+				/* 去除默认的上下边距 */
+			}
+
+			/* 跳转到其他页面的区域样式 */
+			.page-links {
+				text-align: center;
+				padding: 20px 0;
+			}
+
+			.page-links ul {
+				list-style-type: none;
+				padding: 0;
+			}
+
+			.page-links li {
+				display: inline-block;
+				margin: 0 10px;
+			}
+
+			.page-links li a {
+				text-decoration: none;
+				color: #333;
+				padding: 5px 10px;
+				border: 1px solid #ccc;
+				border-radius: 4px;
+				transition: all 0.3s ease;
+			}
+
+			.page-links li a:hover {
+				background-color: #f0f0f0;
+			}
+
 			h1 {
 				text-align: center;
 			}
 		</style>
 	</head>
+	<header>
+		<!-- 导航栏 -->
+		<nav class="navbar">
+			<ul class="navbar-list">
+				<li class="navbar-item"><a href="index.html">首页</a></li>
+				<li class="navbar-item"><a href="Servers.html">MC服务器</a></li>
+				<li class="navbar-item"><a href="news.html">最新资讯</a></li>
+				<li class="navbar-item"><a href="about.html">关于我们</a></li>
+			</ul>
+		</nav>
+	</header>
 	<body>
-		<header>
-			<!-- 导航栏 -->
-			<nav class="navbar">
-				<ul class="navbar-list">
-					<li class="navbar-item"><a href="index.html">首页</a></li>
-					<li class="navbar-item"><a href="about.html">关于我们</a></li>
-					<li class="navbar-item"><a href="contact.html">联系我们</a></li>
-				</ul>
-			</nav>
-			<!-- Banner 部分 -->
-			<div class="banner">
-				<div class="logo-container">
-					<img src="img/AMRClogo.png" alt="组织LOGO">
-				</div>
+		<main>
+			<div class="logo-container">
+				<img src="img/AMRClogo.png" alt="AMRC Logo" class="logo-img">
 			</div>
-			<!-- 标题部分 -->
 			<h1 class="org-name">AMRC 我的世界官方网站</h1>
-			<div class="center-flex">
-				<a href="about.html" class="btn">了解更多</a>
-			</div>
 
-			<!-- 页脚部分 -->
-			<footer>
-				<p>&copy; 2024 AMRC 版权所有</p>
-			</footer>
-		</header>
+			<!-- 跳转到其他页面的区域 -->
+			<section class="page-links">
+				<!-- <h2>快速链接</h2> -->
+				<ul>
+					<li><a href="servers.html">MC服务器</a></li>
+					<li><a href="news.html">最新资讯</a></li>
+					<li><a href="about.html">关于我们</a></li>
+				</ul>
+			</section>
+		</main>
+		<!-- 页脚部分 -->
+		<footer>
+			<p>&copy; 2024 AMRC 版权所有</p>
+		</footer>
 	</body>
 </html>

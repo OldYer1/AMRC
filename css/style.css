@@ -52,66 +52,6 @@ body {
 	/* 链接鼠标悬停时的文字颜色 */
 }
 
-/* Banner 部分样式 */
-.banner {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	padding: 20px;
-	/* 为banner添加内边距，避免内容紧贴边缘 */
-	background-color: #f0f0f0;
-	text-align: center;
-}
-
-.logo-container {
-	/* 这里不需要特殊样式，除非您想对容器本身做额外的样式处理 */
-}
-
-.logo-container img {
-	max-width: 80%;
-	/* 图片最大宽度为容器宽度 */
-	height: auto;
-	/* 保持图片的原始纵横比 */
-	margin-bottom: 10px;
-	/* 图片下方间距 */
-}
-
-.org-name {
-	margin: 0;
-	/* 去除默认的上下边距 */
-}
-
-/* 超链接按钮样式 */
-.center-flex {
-	display: flex;
-	justify-content: center;
-	/* 水平居中 */
-	align-items: center;
-	/* 垂直居中（如果父元素有高度）*/
-	height: 100px;
-	/* 可以设置任意高度，取决于你的需求 */
-}
-
-.btn {
-	  display: inline-block; /* 允许设置宽度和高度 */  
-	  padding: 10px 20px; /* 内边距 */  
-	  background-color: #007BFF; /* 背景色，例如Bootstrap的蓝色 */  
-	  color: #fff; /* 文字颜色 */  
-	  text-decoration: none; /* 去除下划线 */  
-	  border-radius: 5px; /* 圆角 */  
-	  margin-top: 20px; /* 与上方内容的间距 */  
-	  transition: background-color 0.3s ease; /* 平滑的背景色过渡效果 */ 
-}
-
-.future-plans h2 {
-	/* 如果有需要，可以为h2标签添加样式 */
-}
-
-.future-plans p {
-	/* 如果有需要，可以为p标签添加样式 */
-}
-
 /* 页脚部分样式 */
 footer {
 	padding: 10px;
