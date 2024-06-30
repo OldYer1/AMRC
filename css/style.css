@@ -5,12 +5,21 @@ body {
 	font-family: Arial, sans-serif;
 }
 
+/* 容器样式 */
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #fff;
+}
+
 /* 导航栏样式 */
 .navbar {
 	background-color: #333;
 	/* 导航栏背景色 */
 	overflow: hidden;
 	/* 清除浮动 */
+	padding: 8px;
 }
 
 .navbar-list {
@@ -54,7 +63,7 @@ body {
 
 /* 页脚部分样式 */
 footer {
-	padding: 10px;
+	padding: 5px;
 	background-color: #333;
 	color: #fff;
 	text-align: center;
